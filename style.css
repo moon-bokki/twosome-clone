@@ -1,8 +1,16 @@
+/* 모든 요소의 margin, padding 제거 */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: "Malgun Gothic", sans-serif;
   background: #F5F5F5;
   max-width: 430px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* ★ fixed 헤더 + 하단 탭바 공간 확보 */
   padding-top: 56px;
   padding-bottom: 60px;
@@ -25,23 +33,29 @@ a { text-decoration: none; color: inherit; }
 
    /* 너비값 100% */
    width: 100%; 
-    .logo-text {
+    .logo-text 
+      {
       background: none;
       cursor: pointer;
-      position: relative;
-      display: flex;
+      position: absolute;
       align-items: center;
-      top: 0;}
+      right: 30%;
+      }
 
-    .logo-btn {
+    .logo-btn 
+      {
       background: none;
       cursor: pointer;
-      top: 0;}      
+      position: absolute;
+      left: 50px;
+      align-items: center;
+      }      
 }
 .login-img {
-    background: cornflowerblue;
-    cursor: pointer;
-    width: 100%;
+
+   
+   cursor: pointer;
+   width: 100%;
 
 }
 .thebogi {
@@ -76,7 +90,7 @@ a { text-decoration: none; color: inherit; }
    color: #999;
    transition: color 0.2s;
 }
-.nav-item.action {color: #C8102E;}
+.nav-item.action {color: #C8102E;} 
 .nav-item:hover {color: #C8102E;}
 
 .nav-icon { font-size: 20px;}
@@ -112,6 +126,9 @@ a { text-decoration: none; color: inherit; }
 
 .nav-icon { font-size: 20px;}
 .nav-label { font-size: 10px; font-weight: 700;}
+
+
+
 
  
 

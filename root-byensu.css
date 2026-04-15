@@ -1,0 +1,16 @@
+.login-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0;
+  height: 45px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  /* 가운데 정렬 */
+  left: 50%;
+  transform: translate(-50%);
+
+  /* 너비값 100% */
+  width: 100%;
+}
